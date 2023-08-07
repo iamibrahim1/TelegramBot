@@ -491,7 +491,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             await query.answer(url=f"https://t.me/{temp.U_NAME}?start={ident}_{file_id}")
     elif query.data.startswith("checksub"):
         if AUTH_CHANNEL and not await is_subscribed(client, query):
-            await query.answer("𝑰 𝑳𝒊𝒌𝒆 𝒀𝒐𝒖𝒓 𝑺𝒎𝒂𝒓𝒕𝒏𝒆𝒔𝒔, 𝑩𝒖𝒕 𝑫𝒐𝒏'𝒕 𝑩𝒆 𝑶𝒗𝒆𝒓𝒔𝒎𝒂𝒓𝒕 😒\nPᴏᴡᴇʀᴅᴇᴅ BY ᴋᴜᴛᴛᴜ ʙᴏᴛ™t", show_alert=True)
+            await query.answer("𝑰 𝑳𝒊𝒌𝒆 𝒀𝒐𝒖𝒓 𝑺𝒎𝒂𝒓𝒕𝒏𝒆𝒔𝒔, 𝑩𝒖𝒕 𝑫𝒐𝒏'𝒕 𝑩𝒆 𝑶𝒗𝒆𝒓𝒔𝒎𝒂𝒓𝒕 😒\nPᴏᴡᴇʀᴅᴇᴅ BY Lucifer botz", show_alert=True)
             return
         ident, file_id = query.data.split("#")
         files_ = await get_file_details(file_id)
@@ -566,8 +566,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
             InlineKeyboardButton('Aᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ💕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('Mᴏᴠɪᴇ ɢʀᴏᴜᴘ🎥', url='https://t.me/wudixh'),
-            InlineKeyboardButton('Oᴡɴᴇʀ👤', url='https://t.me/im_goutham_josh')
+            InlineKeyboardButton('Channel 🎥', url='https://t.me/digitalhub04'),
+            InlineKeyboardButton('Oᴡɴᴇʀ👤', url='https://t.me/lucifer6985')
             ],[      
             InlineKeyboardButton('Hᴇʟᴘ🔧', callback_data='help'),
             InlineKeyboardButton('Aʙᴏᴜᴛ🖥', callback_data='about')
